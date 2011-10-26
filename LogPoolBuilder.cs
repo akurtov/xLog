@@ -1,4 +1,5 @@
-﻿using XLog.StartupStrategy;
+﻿using XLog.DefaultAdapter.Console;
+using XLog.StartupStrategy;
 
 namespace XLog
 {
@@ -20,7 +21,7 @@ namespace XLog
                 return factory;
             }
 
-            new DefaultStratagy().TryGetFactory(out factory, out errors);
+            factory = new DefaultLogFactory();
             factory.CreateLogger("LogInitializer").Info(errors);
             return factory;
         }
