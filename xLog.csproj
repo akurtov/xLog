@@ -56,7 +56,6 @@
     <Compile Include="ILogFactory.cs" />
     <Compile Include="IStartupStrategy.cs" />
     <Compile Include="StartupStrategy\AppConfigStrategy.cs" />
-    <Compile Include="StartupStrategy\DefaultStratagy.cs" />
     <Compile Include="LogPoolBuilder.cs" />
     <Compile Include="LogManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
